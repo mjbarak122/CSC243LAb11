@@ -32,6 +32,6 @@ class ScubaTank:
 
 def transfer_air(source, target, amount):
     before = source.get_bar()
-    source.release(amount)  # prints its own message if it fails
-    if before - source.get_bar() > 0:  # source really lost air
+    source.release(amount)
+    if before - source.get_bar() > 0:
         target.fill(amount)
