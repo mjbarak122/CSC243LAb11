@@ -6,10 +6,10 @@ class Airlock:
     def is_sealed(self):
         return self.__sealed
 
-    def lock_bolts(self):  # internal helper
+    def lock_bolts(self):
         print("Bolts locked.")
 
-    def unlock_bolts(self):  # internal helper
+    def unlock_bolts(self):
         print("Bolts unlocked.")
 
     def seal(self):
